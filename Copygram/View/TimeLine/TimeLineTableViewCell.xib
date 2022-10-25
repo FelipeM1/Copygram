@@ -74,7 +74,7 @@
                                     <constraint firstAttribute="bottom" secondItem="mbV-uW-11u" secondAttribute="bottom" constant="16" id="xqW-Wm-XB2"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="raul-angel-x8Ac6jee_3s-unsplash 1" translatesAutoresizingMaskIntoConstraints="NO" id="EyO-0v-0Uf" userLabel="imageView">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Replace image here" translatesAutoresizingMaskIntoConstraints="NO" id="EyO-0v-0Uf" userLabel="imageView">
                                 <rect key="frame" x="0.0" y="60" width="400" height="491"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxT-iq-KDI">
@@ -174,9 +174,9 @@
         <image name="Bookmark" width="20" height="23"/>
         <image name="Comment" width="20" height="20"/>
         <image name="Heart" width="23" height="20"/>
+        <image name="Replace image here" width="375" height="537"/>
         <image name="Share" width="23" height="20"/>
         <image name="marcella" width="1080" height="1090"/>
-        <image name="raul-angel-x8Ac6jee_3s-unsplash 1" width="375" height="469"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

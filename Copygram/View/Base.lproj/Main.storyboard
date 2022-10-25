@@ -17,46 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7S8-Ys-ixk" userLabel="timeLineVw">
-                                <rect key="frame" x="0.0" y="164" width="414" height="652"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SYx-hF-hL8">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </tableView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="SYx-hF-hL8" secondAttribute="trailing" id="3uH-aS-8gc"/>
-                                    <constraint firstItem="SYx-hF-hL8" firstAttribute="top" secondItem="7S8-Ys-ixk" secondAttribute="top" id="Uo7-s1-qtk"/>
-                                    <constraint firstAttribute="bottom" secondItem="SYx-hF-hL8" secondAttribute="bottom" constant="-70" id="i5n-Hb-X7x"/>
-                                    <constraint firstItem="SYx-hF-hL8" firstAttribute="leading" secondItem="7S8-Ys-ixk" secondAttribute="leading" id="xac-vR-0B1"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1i-fH-iFa" userLabel="tabBarVW">
-                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
-                                <subviews>
-                                    <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSg-dk-Xx0">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="ZCH-7M-nBB"/>
-                                        </constraints>
-                                        <items>
-                                            <tabBarItem title="Home" image="Home" id="eKW-hg-3kA"/>
-                                            <tabBarItem title="Search" image="Search" id="Dud-uJ-eMg"/>
-                                            <tabBarItem title="Profile" image="person.fill" catalog="system" id="eAH-0K-Qvn"/>
-                                        </items>
-                                    </tabBar>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="6eW-a1-7vg"/>
-                                    <constraint firstAttribute="trailing" secondItem="fSg-dk-Xx0" secondAttribute="trailing" id="UGj-hW-4Eb"/>
-                                    <constraint firstItem="fSg-dk-Xx0" firstAttribute="top" secondItem="T1i-fH-iFa" secondAttribute="top" id="p72-yI-ucK"/>
-                                    <constraint firstItem="fSg-dk-Xx0" firstAttribute="leading" secondItem="T1i-fH-iFa" secondAttribute="leading" id="u0g-vL-t9n"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aT-ad-Rer" userLabel="headerVW">
                                 <rect key="frame" x="0.0" y="33" width="414" height="41"/>
                                 <subviews>
@@ -131,6 +91,46 @@
                                     <constraint firstAttribute="trailing" secondItem="7Gk-dw-e9I" secondAttribute="trailing" id="eYn-yZ-8ls"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7S8-Ys-ixk" userLabel="timeLineVw">
+                                <rect key="frame" x="0.0" y="164" width="414" height="652"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SYx-hF-hL8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SYx-hF-hL8" secondAttribute="trailing" id="3uH-aS-8gc"/>
+                                    <constraint firstItem="SYx-hF-hL8" firstAttribute="top" secondItem="7S8-Ys-ixk" secondAttribute="top" id="Uo7-s1-qtk"/>
+                                    <constraint firstAttribute="bottom" secondItem="SYx-hF-hL8" secondAttribute="bottom" constant="-70" id="i5n-Hb-X7x"/>
+                                    <constraint firstItem="SYx-hF-hL8" firstAttribute="leading" secondItem="7S8-Ys-ixk" secondAttribute="leading" id="xac-vR-0B1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1i-fH-iFa" userLabel="tabBarVW">
+                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                                <subviews>
+                                    <tabBar tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSg-dk-Xx0">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="ZCH-7M-nBB"/>
+                                        </constraints>
+                                        <items>
+                                            <tabBarItem title="Home" image="Home" id="eKW-hg-3kA"/>
+                                            <tabBarItem title="Search" image="Search" id="Dud-uJ-eMg"/>
+                                            <tabBarItem title="Profile" image="person.fill" catalog="system" id="eAH-0K-Qvn"/>
+                                        </items>
+                                    </tabBar>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6eW-a1-7vg"/>
+                                    <constraint firstAttribute="trailing" secondItem="fSg-dk-Xx0" secondAttribute="trailing" id="UGj-hW-4Eb"/>
+                                    <constraint firstItem="fSg-dk-Xx0" firstAttribute="top" secondItem="T1i-fH-iFa" secondAttribute="top" id="p72-yI-ucK"/>
+                                    <constraint firstItem="fSg-dk-Xx0" firstAttribute="leading" secondItem="T1i-fH-iFa" secondAttribute="leading" id="u0g-vL-t9n"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -145,6 +145,7 @@
                             <constraint firstItem="T1i-fH-iFa" firstAttribute="top" secondItem="7S8-Ys-ixk" secondAttribute="bottom" id="M6o-o0-78z"/>
                             <constraint firstItem="YcB-Tk-npb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="MTV-o3-KTB"/>
                             <constraint firstItem="8aT-ad-Rer" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-11" id="PHB-XP-CIq"/>
+                            <constraint firstAttribute="bottom" secondItem="T1i-fH-iFa" secondAttribute="bottom" id="Tcb-et-ZXW"/>
                             <constraint firstItem="YcB-Tk-npb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hXc-yZ-dXX"/>
                             <constraint firstItem="8aT-ad-Rer" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iyG-h0-dMo"/>
                             <constraint firstItem="YcB-Tk-npb" firstAttribute="top" secondItem="8aT-ad-Rer" secondAttribute="bottom" id="rZc-qq-3R4"/>
@@ -159,6 +160,7 @@
                         <outlet property="perfilCollection" destination="7Gk-dw-e9I" id="RJJ-V5-kWq"/>
                         <outlet property="perfilCollectionHeightConstraint" destination="Kz5-bj-vhQ" id="lep-GS-e7h"/>
                         <outlet property="tabBar" destination="fSg-dk-Xx0" id="ikb-vo-Ows"/>
+                        <outlet property="tabBarHeightConstraint" destination="ZCH-7M-nBB" id="Bdb-TG-iAZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

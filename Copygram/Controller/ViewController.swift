@@ -11,6 +11,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     @IBOutlet weak var hzTableView: UITableView!
     @IBOutlet weak var tabBar: UITabBar!
+    @IBOutlet weak var tabBarHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var perfilCollection: UICollectionView!
     @IBOutlet weak var perfilCollectionHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var addBtn: UIButton!
@@ -80,14 +81,20 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.tag == 1 {
+        if scrollView.tag == 1{
             perfilCollectionHeightConstraint.constant = (scrollView.contentOffset.y < 40) ? 90: 0
             UIView.animate(withDuration: 0.2) {
                 self.view.layoutIfNeeded()
+                
+                self.tabBarHeightConstraint.constant = (scrollView.contentOffset.y < 1150) ? 80: 0
+                UIView.animate(withDuration: 0.1) {
+                    self.view.layoutIfNeeded()
+                }
             }
         }
+        
     }
-
+    
 }
 
 

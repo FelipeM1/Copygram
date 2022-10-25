@@ -34,13 +34,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1i-fH-iFa" userLabel="tabBarVW">
-                                <rect key="frame" x="0.0" y="816" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
                                 <subviews>
                                     <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSg-dk-Xx0">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="ZCH-7M-nBB"/>
+                                            <constraint firstAttribute="height" constant="80" id="ZCH-7M-nBB"/>
                                         </constraints>
                                         <items>
                                             <tabBarItem title="Home" image="Home" id="eKW-hg-3kA"/>
@@ -51,7 +51,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="6eW-a1-7vg"/>
+                                    <constraint firstAttribute="height" constant="80" id="6eW-a1-7vg"/>
                                     <constraint firstAttribute="trailing" secondItem="fSg-dk-Xx0" secondAttribute="trailing" id="UGj-hW-4Eb"/>
                                     <constraint firstItem="fSg-dk-Xx0" firstAttribute="top" secondItem="T1i-fH-iFa" secondAttribute="top" id="p72-yI-ucK"/>
                                     <constraint firstItem="fSg-dk-Xx0" firstAttribute="leading" secondItem="T1i-fH-iFa" secondAttribute="leading" id="u0g-vL-t9n"/>
@@ -85,6 +85,7 @@
                                     <constraint firstItem="dI1-UU-MLf" firstAttribute="top" secondItem="8aT-ad-Rer" secondAttribute="top" constant="5" id="AhO-8L-RnY"/>
                                     <constraint firstAttribute="bottom" secondItem="Nbh-C2-tej" secondAttribute="bottom" constant="6" id="Azr-Fm-4d4"/>
                                     <constraint firstItem="pAp-jf-D8w" firstAttribute="top" secondItem="8aT-ad-Rer" secondAttribute="top" constant="6" id="Lp2-sH-Mmq"/>
+                                    <constraint firstItem="dsr-0i-Wgg" firstAttribute="leading" secondItem="dI1-UU-MLf" secondAttribute="trailing" constant="136" id="UWg-P4-5Sh"/>
                                     <constraint firstAttribute="bottom" secondItem="dsr-0i-Wgg" secondAttribute="bottom" constant="5" id="YBm-7r-qOL"/>
                                     <constraint firstAttribute="bottom" secondItem="pAp-jf-D8w" secondAttribute="bottom" constant="5" id="cOa-NJ-Xld"/>
                                     <constraint firstItem="Nbh-C2-tej" firstAttribute="leading" secondItem="pAp-jf-D8w" secondAttribute="trailing" constant="8" symbolic="YES" id="hFF-yJ-2jq"/>
@@ -140,7 +141,7 @@
                             <constraint firstItem="T1i-fH-iFa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CNs-1j-wIk"/>
                             <constraint firstItem="8aT-ad-Rer" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GcA-KA-Egx"/>
                             <constraint firstItem="7S8-Ys-ixk" firstAttribute="top" secondItem="YcB-Tk-npb" secondAttribute="bottom" id="IEM-ck-YLq"/>
-                            <constraint firstAttribute="bottom" secondItem="T1i-fH-iFa" secondAttribute="bottom" constant="20" id="Kcl-uv-Y98"/>
+                            <constraint firstAttribute="bottom" secondItem="T1i-fH-iFa" secondAttribute="bottom" id="Kcl-uv-Y98"/>
                             <constraint firstItem="T1i-fH-iFa" firstAttribute="top" secondItem="7S8-Ys-ixk" secondAttribute="bottom" id="M6o-o0-78z"/>
                             <constraint firstItem="YcB-Tk-npb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="MTV-o3-KTB"/>
                             <constraint firstItem="8aT-ad-Rer" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-11" id="PHB-XP-CIq"/>

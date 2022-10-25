@@ -56,7 +56,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("tap")
-        (collectionView.cellForItem(at: indexPath) as? PerfilCollectionViewCell)?.hasSeen.toggle()
+        (collectionView.cellForItem(at: indexPath) as? PerfilCollectionViewCell)?.hasSeen = true
     }
     
     //MARK: TableView

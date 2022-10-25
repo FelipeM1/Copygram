@@ -12,7 +12,11 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     @IBOutlet weak var hzTableView: UITableView!
     @IBOutlet weak var tabBar: UITabBar!
     @IBOutlet weak var perfilCollection: UICollectionView!
-   
+    @IBOutlet weak var perfilCollectionHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var addBtn: UIButton!
+    @IBOutlet weak var notificationsBtn: UIButton!
+    @IBOutlet weak var chatBtn: UIButton!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -75,8 +79,15 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return 601
     }
     
-    
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.tag == 1 {
+            perfilCollectionHeightConstraint.constant = (scrollView.contentOffset.y < 40) ? 90: 0
+            UIView.animate(withDuration: 0.2) {
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+
 }
 
 

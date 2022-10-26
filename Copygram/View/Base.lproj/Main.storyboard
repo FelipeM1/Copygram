@@ -160,7 +160,7 @@
                         <outlet property="perfilCollection" destination="7Gk-dw-e9I" id="RJJ-V5-kWq"/>
                         <outlet property="perfilCollectionHeightConstraint" destination="Kz5-bj-vhQ" id="lep-GS-e7h"/>
                         <outlet property="tabBar" destination="fSg-dk-Xx0" id="ikb-vo-Ows"/>
-                        <outlet property="tabBarHeightConstraint" destination="ZCH-7M-nBB" id="Bdb-TG-iAZ"/>
+                        <outlet property="tabBarViewHeightConstraint" destination="6eW-a1-7vg" id="amo-wp-Qd6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

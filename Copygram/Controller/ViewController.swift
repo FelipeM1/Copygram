@@ -11,12 +11,14 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     @IBOutlet weak var hzTableView: UITableView!
     @IBOutlet weak var tabBar: UITabBar!
-    @IBOutlet weak var tabBarHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tabBarViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var perfilCollection: UICollectionView!
     @IBOutlet weak var perfilCollectionHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var addBtn: UIButton!
     @IBOutlet weak var notificationsBtn: UIButton!
     @IBOutlet weak var chatBtn: UIButton!
+    
+    private var lastContentOffset: CGFloat = 0
     
     override func viewDidLoad() {
         
@@ -62,7 +64,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     //MARK: TableView
     func numberOfSections(in tableView: UITableView) -> Int {
-        5
+        10
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -83,14 +85,17 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.tag == 1{
             perfilCollectionHeightConstraint.constant = (scrollView.contentOffset.y < 40) ? 90: 0
+            
+            if (self.lastContentOffset > scrollView.contentOffset.y) {
+                self.tabBarViewHeightConstraint.constant = 80
+            } else if (self.lastContentOffset < scrollView.contentOffset.y) {
+                self.tabBarViewHeightConstraint.constant = 0
+            }
+            
             UIView.animate(withDuration: 0.2) {
                 self.view.layoutIfNeeded()
-                
-                self.tabBarHeightConstraint.constant = (scrollView.contentOffset.y < 1150) ? 80: 0
-                UIView.animate(withDuration: 0.1) {
-                    self.view.layoutIfNeeded()
-                }
             }
+            self.lastContentOffset = scrollView.contentOffset.y
         }
         
     }

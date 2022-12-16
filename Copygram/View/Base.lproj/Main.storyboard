@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aT-ad-Rer" userLabel="headerVW">
-                                <rect key="frame" x="0.0" y="33" width="414" height="41"/>
+                                <rect key="frame" x="0.0" y="37" width="414" height="41"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IG logo" translatesAutoresizingMaskIntoConstraints="NO" id="dI1-UU-MLf">
                                         <rect key="frame" x="8" y="5" width="104" height="30"/>
@@ -35,6 +36,10 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbh-C2-tej">
                                         <rect key="frame" x="359" y="5" width="48" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="QOz-Tl-VKx"/>
+                                            <constraint firstAttribute="height" constant="30" id="Zye-wT-1lM"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="messenger"/>
                                     </button>
@@ -57,7 +62,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YcB-Tk-npb" userLabel="storiesVw">
-                                <rect key="frame" x="0.0" y="74" width="414" height="90"/>
+                                <rect key="frame" x="0.0" y="78" width="414" height="90"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Gk-dw-e9I">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
@@ -92,43 +97,51 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7S8-Ys-ixk" userLabel="timeLineVw">
-                                <rect key="frame" x="0.0" y="164" width="414" height="652"/>
+                                <rect key="frame" x="0.0" y="168" width="414" height="664"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SYx-hF-hL8">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SYx-hF-hL8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="720"/>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="SYx-hF-hL8" secondAttribute="trailing" id="3uH-aS-8gc"/>
                                     <constraint firstItem="SYx-hF-hL8" firstAttribute="top" secondItem="7S8-Ys-ixk" secondAttribute="top" id="Uo7-s1-qtk"/>
-                                    <constraint firstAttribute="bottom" secondItem="SYx-hF-hL8" secondAttribute="bottom" constant="-70" id="i5n-Hb-X7x"/>
+                                    <constraint firstAttribute="bottom" secondItem="SYx-hF-hL8" secondAttribute="bottom" constant="-56" id="i5n-Hb-X7x"/>
                                     <constraint firstItem="SYx-hF-hL8" firstAttribute="leading" secondItem="7S8-Ys-ixk" secondAttribute="leading" id="xac-vR-0B1"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1i-fH-iFa" userLabel="tabBarVW">
-                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="826" width="414" height="70"/>
                                 <subviews>
-                                    <tabBar tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSg-dk-Xx0">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="ZCH-7M-nBB"/>
-                                        </constraints>
-                                        <items>
-                                            <tabBarItem title="Home" image="Home" id="eKW-hg-3kA"/>
-                                            <tabBarItem title="Search" image="Search" id="Dud-uJ-eMg"/>
-                                            <tabBarItem title="Profile" image="person.fill" catalog="system" id="eAH-0K-Qvn"/>
-                                        </items>
-                                    </tabBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="zqq-5l-VQp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djh-py-fTC">
+                                                <rect key="frame" x="0.0" y="0.0" width="148" height="70"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Home"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SL8-P7-duf">
+                                                <rect key="frame" x="133" y="0.0" width="148" height="70"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Search"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmF-fJ-Uwg">
+                                                <rect key="frame" x="266" y="0.0" width="148" height="70"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="mentions"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="6eW-a1-7vg"/>
-                                    <constraint firstAttribute="trailing" secondItem="fSg-dk-Xx0" secondAttribute="trailing" id="UGj-hW-4Eb"/>
-                                    <constraint firstItem="fSg-dk-Xx0" firstAttribute="top" secondItem="T1i-fH-iFa" secondAttribute="top" id="p72-yI-ucK"/>
-                                    <constraint firstItem="fSg-dk-Xx0" firstAttribute="leading" secondItem="T1i-fH-iFa" secondAttribute="leading" id="u0g-vL-t9n"/>
+                                    <constraint firstAttribute="height" constant="70" id="6eW-a1-7vg"/>
+                                    <constraint firstAttribute="bottom" secondItem="zqq-5l-VQp" secondAttribute="bottom" id="PQq-zE-Rac"/>
+                                    <constraint firstItem="zqq-5l-VQp" firstAttribute="top" secondItem="T1i-fH-iFa" secondAttribute="top" id="fBZ-E1-GZO"/>
+                                    <constraint firstAttribute="trailing" secondItem="zqq-5l-VQp" secondAttribute="trailing" id="sRn-Iz-8ca"/>
+                                    <constraint firstItem="zqq-5l-VQp" firstAttribute="leading" secondItem="T1i-fH-iFa" secondAttribute="leading" id="vs0-pS-i2T"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -142,10 +155,9 @@
                             <constraint firstItem="8aT-ad-Rer" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GcA-KA-Egx"/>
                             <constraint firstItem="7S8-Ys-ixk" firstAttribute="top" secondItem="YcB-Tk-npb" secondAttribute="bottom" id="IEM-ck-YLq"/>
                             <constraint firstAttribute="bottom" secondItem="T1i-fH-iFa" secondAttribute="bottom" id="Kcl-uv-Y98"/>
-                            <constraint firstItem="T1i-fH-iFa" firstAttribute="top" secondItem="7S8-Ys-ixk" secondAttribute="bottom" id="M6o-o0-78z"/>
+                            <constraint firstItem="T1i-fH-iFa" firstAttribute="top" secondItem="7S8-Ys-ixk" secondAttribute="bottom" constant="-6" id="M6o-o0-78z"/>
                             <constraint firstItem="YcB-Tk-npb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="MTV-o3-KTB"/>
                             <constraint firstItem="8aT-ad-Rer" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-11" id="PHB-XP-CIq"/>
-                            <constraint firstAttribute="bottom" secondItem="T1i-fH-iFa" secondAttribute="bottom" id="Tcb-et-ZXW"/>
                             <constraint firstItem="YcB-Tk-npb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hXc-yZ-dXX"/>
                             <constraint firstItem="8aT-ad-Rer" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iyG-h0-dMo"/>
                             <constraint firstItem="YcB-Tk-npb" firstAttribute="top" secondItem="8aT-ad-Rer" secondAttribute="bottom" id="rZc-qq-3R4"/>
@@ -155,11 +167,14 @@
                     <connections>
                         <outlet property="addBtn" destination="dsr-0i-Wgg" id="UuY-zC-bQg"/>
                         <outlet property="chatBtn" destination="Nbh-C2-tej" id="npP-D4-DJg"/>
+                        <outlet property="homeBtn" destination="djh-py-fTC" id="XXE-W0-Ee2"/>
                         <outlet property="hzTableView" destination="SYx-hF-hL8" id="SHN-J7-4fd"/>
                         <outlet property="notificationsBtn" destination="pAp-jf-D8w" id="Eig-K2-sHl"/>
                         <outlet property="perfilCollection" destination="7Gk-dw-e9I" id="RJJ-V5-kWq"/>
                         <outlet property="perfilCollectionHeightConstraint" destination="Kz5-bj-vhQ" id="lep-GS-e7h"/>
-                        <outlet property="tabBar" destination="fSg-dk-Xx0" id="ikb-vo-Ows"/>
+                        <outlet property="profileBtn" destination="pmF-fJ-Uwg" id="ILh-RR-rHq"/>
+                        <outlet property="searchBtn" destination="SL8-P7-duf" id="Dyq-Ga-Bwc"/>
+                        <outlet property="tabBarVW" destination="T1i-fH-iFa" id="X9o-sO-arg"/>
                         <outlet property="tabBarViewHeightConstraint" destination="6eW-a1-7vg" id="amo-wp-Qd6"/>
                     </connections>
                 </viewController>
@@ -174,8 +189,8 @@
         <image name="IG logo" width="104" height="30"/>
         <image name="Search" width="23" height="23"/>
         <image name="add" width="24" height="24"/>
+        <image name="mentions" width="24" height="24"/>
         <image name="messenger" width="24" height="24"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

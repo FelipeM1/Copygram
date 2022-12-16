@@ -51,6 +51,7 @@
 				56633D3628DCECD10011888A /* Main.storyboard */,
 				56DA3EB828DE49F100A83083 /* Stories */,
 				56DA3EB928DE4A3400A83083 /* TimeLine */,
+				565DA581291ADA420016973D /* Profile */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -61,6 +62,13 @@
 				56633D3428DCECD10011888A /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		565DA581291ADA420016973D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		56633D2428DCECD10011888A = {

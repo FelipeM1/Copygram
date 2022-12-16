@@ -56,7 +56,7 @@
                                         <rect key="frame" x="340" y="17" width="52" height="27"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="°°°"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ellipsis" catalog="system"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -176,6 +176,7 @@
         <image name="Heart" width="23" height="20"/>
         <image name="Replace image here" width="375" height="537"/>
         <image name="Share" width="23" height="20"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="marcella" width="1080" height="1090"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
